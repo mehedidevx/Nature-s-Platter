@@ -4,25 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature's Platter</title>
-    
+    <!-- Tailwind Cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font Cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <!-- FontAwesome Cdn -->
+    <script src="https://kit.fontawesome.com/525fd6b0af.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary-color': '#199800',
               }
             }
           }
@@ -38,8 +42,29 @@
       <!-- Header section -->
        <header>
             <!-- Navbar Section -->
-             <nav>
-
+             <nav class="md:container mx-auto border-b-primary-color border md:border-none">
+                <div class="flex justify-between items-center mx-auto py-6 px-5 md:px-0 ">
+                    <div class="md:hidden">
+                        <img src="./images/Group.png" alt="">
+                    </div>
+                    <div class="hidden md:block">
+                       <img src="./images/logo-header.png" alt="">
+                    </div>
+                    <div class="hidden md:flex gap-6 text-xl">
+                        <p>Home</p>
+                        <p>Services</p>
+                        <p>Contact us</p>
+                    </div>
+                    <div class="hidden md:flex gap-7 items-center">
+                        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                        <i class="fa-solid fa-cart-shopping text-xl"></i>
+                        <button class="btn bg-transparent border-[#179800] rounded-lg text-xl">Login</button>
+                        <button class="btn bg-[#179800] text-white text-xl">Register</button>
+                    </div>
+                    <div class="md:hidden">
+                        <i class="fa-solid fa-bars text-3xl text-primary-color"></i>
+                    </div>
+                </div>
              </nav>
        </header>
        <!-- Main Section -->
