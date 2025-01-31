@@ -27,6 +27,7 @@
               colors: {
                 clifford: '#da373d',
                 'primary-color': '#199800',
+                'banner-bg': 'linear-gradient(180.00deg, rgb(255, 255, 255),rgb(239, 235, 227) 100%)',
               }
             }
           }
@@ -40,7 +41,7 @@
   </head>
   <body>
       <!-- Header section -->
-       <header>
+       <header class="bg-banner-bg">
             <!-- Navbar Section -->
              <nav class="md:container mx-auto border-b-primary-color border md:border-none">
                 <div class="flex justify-between items-center mx-auto py-6 px-5 md:px-0 ">
@@ -66,6 +67,19 @@
                     </div>
                 </div>
              </nav>
+             <!-- Banner Section -->
+              <section class="md:container mx-auto my-10 md:mt-24">
+                    <div class="md:flex justify-center items-center flex-col gap-5">
+                        <div class="md:w-1/2 text-center">
+                            <h1 class="text-3xl md:text-5xl font-medium md:leading-[71px]">Freshness <span class="text-primary-color mb-8"> You Can <br>
+                                Count</span> On, Prices You’ll Love!</h1>
+                                <p class=" font-normal mt-5 p-5">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="./images/hero-vegetables.png" alt="">
+                        </div>
+                    </div>
+              </section>
        </header>
        <!-- Main Section -->
         <main></main>
